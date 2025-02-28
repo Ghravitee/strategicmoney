@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+body {
+  background-image: url("/src/assets/more-glitch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @keyframes glitch {
   0% {
     text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
@@ -57,12 +63,8 @@
   font-family: "Sddystopian", sans-serif;
 }
 
-.jeju {
-  font-family: "Sdglitch", sans-serif;
-}
-
-.lato {
-  font-family: "Lato", serif;
-  font-weight: 500;
+.quantico {
+  font-family: "Quantico", serif;
+  font-weight: 400;
   font-style: normal;
 }
