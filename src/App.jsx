@@ -87,7 +87,7 @@ const App = () => {
       {/* Description with Staggered Animation */}
       <div className="bg-black p-8 max-w-[50rem]">
         <motion.p
-          className="text-white text-left text-3xl sm:text-2xl md:text-3xl lg:text-3xl px-2 sm:px-4 quantico lowercase"
+          className="text-white text-left text-xl sm:text-2xl md:text-3xl lg:text-3xl px-2 sm:px-4 quantico lowercase"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
