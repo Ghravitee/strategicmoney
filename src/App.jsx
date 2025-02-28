@@ -7,22 +7,21 @@ import pump from "../src/assets/pump-2.png";
 const App = () => {
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
+      className="min-h-screen flex flex-col justify-center items-center bg-cover bg-center px-8 text-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Main Title with Glitch Effect */}
-      <motion.h17
-        className="glitch text-white text-7xl p-10 text-center"
+      <motion.h1
+        className="glitch glitch-font text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl p-6"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         Strategic Money Glitch
-      </motion.h17>
-
+      </motion.h1>
       {/* Twitter Icon & Pump Image */}
       <motion.div
-        className="flex gap-12 justify-center items-center"
+        className="flex flex-wrap gap-6 sm:gap-12 justify-center items-center mt-4"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -33,34 +32,41 @@ const App = () => {
             whileTap={{ scale: 0.9 }}
             className="neon-glow"
           >
-            <FaXTwitter className="text-white text-5xl" />
+            <FaXTwitter className="text-white text-4xl sm:text-5xl" />
           </motion.div>
         </a>
 
         <motion.img
           src={pump}
           alt="pump"
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           className="neon-glow"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         />
       </motion.div>
 
-      {/* Description with Staggered Animation */}
-      <motion.h2
-        className="glitch text-white text-6xl text-center px-8 jeju mt-10"
+      <h2
+        className="glitch glitch-font text-white text-5xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 mt-8"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        $SMG is a Solana token reward system, rewarding holders with SOL and
-        USDC.
-      </motion.h2>
-
+        About $SMG
+      </h2>
+      {/* Description with Staggered Animation */}
+      <motion.p
+        className="glitch text-white text-4xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 jeju mt-8"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.8 }}
+      >
+        A revolutionary Solana token tax system that evolves with your market
+        cap, rewarding diamond hands and building sustainable growth.
+      </motion.p>
       <motion.h3
-        className="glitch text-white text-4xl text-center mt-10"
+        className="glitch text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-8"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1 }}
