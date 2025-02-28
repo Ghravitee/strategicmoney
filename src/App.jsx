@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bgImage from "../src/assets/dark glitch.webp";
+import bgImage from "../src/assets/more-glitch.jpg";
 import { FaXTwitter } from "react-icons/fa6";
 import pump from "../src/assets/pump-2.png";
 
@@ -48,27 +48,28 @@ const App = () => {
       </motion.div>
 
       <h2
-        className="glitch glitch-font text-white text-5xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 mt-8"
+        className="lato text-white text-5xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 mt-8"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        About $SMG
+        About <span className="glitch glitch-font">$SMG</span>
       </h2>
       {/* Description with Staggered Animation */}
       <motion.p
-        className="glitch text-white text-4xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 jeju mt-8"
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
+        className="text-white text-4xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 lato mt-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
         A revolutionary Solana token tax system that evolves with your market
         cap, rewarding diamond hands and building sustainable growth.
       </motion.p>
+
       <motion.h3
-        className="glitch text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-8"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
+        className=" text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-8 lato"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
       >
         Tax: 8% Tax will be applied for rewards and CEX.
