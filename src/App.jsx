@@ -62,7 +62,7 @@ const App = () => {
         {hasCopied ? (
           <h2 className="text-white font-bold text-xl sm:text-2xl">Copied!</h2>
         ) : (
-          <h2 className="text-xl text-white font-bold break-all pro">
+          <h2 className="text-xl lg:text-2xl text-white font-bold break-all pro">
             0x00000000000000000000000000000000000
           </h2>
         )}
@@ -87,7 +87,7 @@ const App = () => {
       {/* Description with Staggered Animation */}
       <div className="bg-black p-8 max-w-[50rem]">
         <motion.p
-          className="text-white text-left text-4xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 quantico mt-8 lowercase"
+          className="text-white text-left text-3xl sm:text-2xl md:text-3xl lg:text-3xl px-4 sm:px-8 quantico lowercase"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -98,7 +98,7 @@ const App = () => {
       </div>
 
       <div className="px-6 py-8 bg-black rounded-xl mt-8">
-        <h3 className=" text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl quantico">
+        <h3 className=" text-white text-xl sm:text-2xl md:text-3xl lg:text-2xl quantico">
           Tax: 8% Tax will be applied for rewards and CEX.
         </h3>
       </div>
