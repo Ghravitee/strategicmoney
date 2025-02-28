@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
+  }
+  20% {
+    text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff;
+  }
+  40% {
+    text-shadow: 2px -2px 0px #ff00ff, -2px 2px 0px #00ffff;
+  }
+  60% {
+    text-shadow: -2px 2px 0px #ff00ff, 2px -2px 0px #00ffff;
+  }
+  80% {
+    text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
+  }
+  100% {
+    text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.glitch {
+  animation: glitch 0.8s infinite alternate;
+}
+
+.animate-flicker {
+  animation: flicker 1.5s infinite alternate;
+}
+
+.neon-glow {
+  filter: drop-shadow(0px 0px 10px #00ffff);
+}
+
+@font-face {
+  font-family: "Sdglitch";
+  src: url("/src/assets/fonts/SdglitchdemoRegular-YzROj.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sddystopian";
+  src: url("/src/assets/fonts/Sddystopiandemo-GO7xa.otf") format("opentype");
+}
+
+.glitch {
+  font-family: "Sddystopian", sans-serif;
+}
+
+.jeju {
+  font-family: "Sdglitch", sans-serif;
+}
