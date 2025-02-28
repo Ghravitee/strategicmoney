@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaXTwitter } from "react-icons/fa6";
-import pump from "../src/assets/pump-2.png";
+// import pump from "../src/assets/pump-2.png";
+import dex from "../src/assets/dex-2.png";
 import { FaRegCopy } from "react-icons/fa6";
 import { FaCopy } from "react-icons/fa6";
 
 const App = () => {
-  const [hasCopied, setHasCopied] = useState(false);
+  // const [hasCopied, setHasCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText("0x000000000000000000000000000000");
-    setHasCopied(true);
+  // const handleCopy = () => {
+  //   navigator.clipboard.writeText("0x000000000000000000000000000000");
+  //   setHasCopied(true);
 
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
-  };
+  //   setTimeout(() => {
+  //     setHasCopied(false);
+  //   }, 2000);
+  // };
   return (
     <div className="flex flex-col justify-center bg-cover bg-center px-8 text-center py-10">
       {/* Main Title with Glitch Effect */}
@@ -44,18 +45,20 @@ const App = () => {
           </motion.div>
         </a>
 
-        <motion.img
-          src={pump}
-          alt="pump"
-          width={50}
-          height={50}
-          className="neon-glow"
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.9 }}
-        />
+        <a href="">
+          <motion.img
+            src={dex}
+            alt="dexscreener"
+            width={50}
+            height={50}
+            className="neon-glow"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          />
+        </a>
       </motion.div>
 
-      <div
+      {/* <div
         onClick={handleCopy}
         className="rounded-xl flex justify-center gap-2 items-center py-8 px-6 w-full sm:w-fit cursor-pointer mx-auto mt-10"
       >
@@ -74,7 +77,7 @@ const App = () => {
             <FaRegCopy className="text-2xl sm:text-3xl text-white" />
           )}
         </div>
-      </div>
+      </div> */}
 
       <h2
         className="glitch glitch-font text-white text-5xl sm:text-3xl md:text-4xl lg:text-5xl px-4 sm:px-8 my-8"
@@ -99,7 +102,7 @@ const App = () => {
 
       <div className="px-6 py-8 bg-black rounded-xl mt-8">
         <h3 className=" text-white text-xl sm:text-2xl md:text-3xl lg:text-2xl quantico lowercase">
-          Tax: 8% Tax will be applied for rewards and CEX.
+          Tax: 8% Tax will be applied for rewards.
         </h3>
       </div>
     </div>
