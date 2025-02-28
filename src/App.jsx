@@ -98,7 +98,7 @@ const App = () => {
       </div>
 
       <div className="px-6 py-8 bg-black rounded-xl mt-8">
-        <h3 className=" text-white text-xl sm:text-2xl md:text-3xl lg:text-2xl quantico">
+        <h3 className=" text-white text-xl sm:text-2xl md:text-3xl lg:text-2xl quantico lowercase">
           Tax: 8% Tax will be applied for rewards and CEX.
         </h3>
       </div>
